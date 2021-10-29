@@ -1,0 +1,482 @@
+/* Color Palette */
+:root {
+    --primary-color: #A4D0BB; 
+    --secondary-color: #f8f9fa;
+    --terzary-color: #79A1B0;
+    --call-to-action: #E5A587;
+
+    /* --darker-primary-color: #86a998; */
+    --darker-primary-color: #667c7a;
+    --white: #ffff;
+    --darker-white: #ebebeb;
+    --grey: #a9a9a9;
+    --darker-grey: #686868;
+    --black: #0000;
+}
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.btn-blue {
+    background: var(--terzary-color);
+    border-color: var(--terzary-color);
+    color: var(--white);
+}
+
+.btn-blue:hover {
+    color: var(--white);
+    border-color: var(--primary-color);
+    background: var(--primary-color); 
+}
+
+.btn-salmon {
+    background: var(--call-to-action);
+    border: var(--call-to-action);
+    color: var(--white);
+}
+
+.btn-salmon:hover {
+    background: var(--terzary-color);
+    border: var(--terzary-color);
+    color: var(--white);
+}
+
+p {
+    margin-bottom: 0;
+}
+
+/* Navbar  */
+nav {
+    border-bottom: 2px solid var(--white);
+}
+
+.navbar-brand {
+    font-size: 26px;
+    color: var(--darker-primary-color) !important;
+}
+
+nav li a {
+    border-bottom: 4px solid transparent;
+}
+
+nav li a:hover {
+    border-color: var(--primary-color);
+    color: var(--darker-primary-color) !important;
+}
+
+nav ul li:last-child {
+    margin-right: 10px;
+}
+
+/* Home Section */
+#home {
+    padding: 80px 0 30px;
+    background-image: url("/images/01.jpg");   
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover; 
+}
+
+.content-title {
+    max-width: 495px;
+}
+
+h1 {
+    color: var(--darker-grey);
+    font-size: 50px;
+    line-height: 60px;
+}
+
+h4 {
+    color: var(--grey);
+}
+
+h5 {
+    font-size: 40px;
+    color: var(--primary-color);
+}
+
+#home span {
+    font-weight: bold;
+    color: var(--terzary-color);
+    letter-spacing: 1px;
+    animation-name: colortext;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colortext {
+    0% {
+        color: var(--terzary-color);
+    }
+    50% {
+        color: var(--primary-color);
+    }
+    100% {
+        color: var(--terzary-color);
+    }
+}
+
+#home h2 {
+    color: var(--darker-grey);
+    line-height: 45px;
+    margin: 16px 0 24px;
+}
+
+input[type=text] {
+    margin-right: 8px;
+    max-width: 170px;
+}
+
+/* Services Section */
+#services {
+    background: var(--secondary-color);  
+}
+
+#services .card {
+    background: none;
+    border: none;
+}
+
+/* Testimonials Section */
+#testimonials {
+    background: var(--terzary-color);
+    color: var(--darker-white);
+}
+
+#testimonials h3 {
+    margin-top: 60px;
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 16px;
+}
+
+#testimonials p {
+    font-style: italic;
+}
+
+.testimonial-image {
+    width: 15%;
+    border-radius: 100%;
+}
+
+#testimonials button {
+    background: var(--call-to-action);
+    max-width: 200px;
+    margin: 0 auto;
+    color: var(--white);
+}
+
+#testimonials button:hover {
+    background: var(--primary-color);
+}
+
+/* Pricing Section */
+#pricing {
+    background-image: url("/images/02.jpg");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+#pricing h2 {
+    color: var(--darker-grey);
+    margin-bottom: 90px;
+}
+
+#pricing h3 {
+    font-size: 2.5rem;
+}
+
+#pricing h4 {   
+    color: var(--darker-grey);
+}
+
+#pricing .card-deck {
+    opacity: 90%;
+}
+
+#pricing .card {
+    border: var(--white);
+}
+
+#pricing .card-header {
+    background: var(--primary-color);
+    background: #e8e8e8;
+    border-bottom: var(--white);
+    color: var(--white);
+}
+
+.btn-block {
+    margin-top: 16px;
+}
+
+/* FAQ Section */
+#faq {
+    background: var(--primary-color);
+}
+
+#faq h2 {
+    color: var(--darker-grey);
+    margin-bottom: 50px;
+}
+
+#faq h4 {
+    color: var(--darker-primary-color);
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+#faq h4:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#faq i {
+    color: var(--darker-primary-color);
+}
+
+#faq i:hover {
+    cursor: pointer;
+}
+
+#faq .card {
+    border: none;
+}
+
+#faq .card-header {
+    border-radius: 0;
+    background: var(--primary-color);
+    border-top: 2px solid var(--darker-primary-color);
+    border-bottom: 2px solid var(--darker-primary-color);
+    padding: 32px 8px;
+}
+
+#faq .layout-faq {
+    border-top: none;
+}
+
+#faq .card-text {    
+    color: var(--darker-grey);
+}
+
+#faq form {
+    max-width: 292px;
+    margin: 45px auto 0px;
+}
+
+#faq ::placeholder {
+    font-style: italic;
+}
+
+#faq .btn-outline-success {
+    border-color: var(--darker-primary-color);
+    color: var(--darker-white);
+    background: var(--darker-primary-color);
+} 
+
+#faq .btn-outline-success:hover {
+    border-color: var(--terzary-color);
+    background: var(--terzary-color);
+}
+
+/* Contact Section */
+#contact {
+    background: var(--secondary-color);
+}
+
+#contact h2 {
+    color: var(--terzary-color);
+    margin-bottom: 28px;
+}
+
+#contact h3 {
+    color: var(--call-to-action);
+    margin: 60px auto 16px;
+}
+
+#contact form {
+    max-width: 350px;
+    margin: 30px auto 0;
+}
+
+#contact i {   
+    color: var(--terzary-color);
+    font-size: 50px;
+    margin: 0 60px;
+}
+
+#contact i:hover {
+    color: var(--grey);
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: var(--terzary-color);
+    color: var(--darker-white);
+    padding: 10px 40px;
+}
+
+
+/* Media Query */
+@media screen and (max-width: 415px) {
+    #home{
+        height: 100vh;
+    }
+    #home .container {
+        margin-top: 8vh;
+    }
+    #home h2 {
+        font-size: 18px;
+        line-height: 36px;
+    }
+    .content-title {
+        max-width: 280px;
+    }
+    input[type=text] {
+        max-width: 100%;
+        margin-right: 0;   
+        margin-bottom: 8px; 
+    }
+    form button {
+        width: 100%;
+    }
+    #testimonials h2 {
+        font-size: 20px;
+        margin-top: 8px;
+    }  
+    .testimonial-image {
+        width: 22%;
+    }
+    #testimonials h3 {
+        margin: 40px 10px 16px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    #pricing {
+        background: var(--secondary-color);
+    }  
+    #pricing .card-deck {
+        opacity: 95%;
+    } 
+    #pricing .card {
+        border: 1px solid rgba(0,0,0,.125);
+        margin-bottom: 34px;
+    }
+    #contact i {
+        font-size: 40px;
+        margin: 0px 20px;
+    }
+    #contact h3 {
+        font-size: 21px;
+    }
+    #contact h4 {
+        font-size: 18px;
+    }   
+}
+
+@media screen and (min-width: 414px) and (max-width: 575px) {
+    #faq button {
+        width: 100%;
+    }
+    #contact i {
+        font-size: 45px;
+        margin: 0 40px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #faq .card-deck .card {
+        margin-bottom: 0;
+    }
+    #faq .card-header {
+        border-bottom: none;
+    }
+    #faq .layout-faq {
+        border-top: 2px solid var(--darker-primary-color);
+    }
+    #faq div div:nth-child(3) div:nth-child(3) .card-header {
+        border-bottom: 2px solid var(--darker-primary-color);
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    #services h4 {
+        font-size: 21px;
+    }
+    #pricing h3 {
+        font-size: 1.6rem;
+    }
+    #contact i {
+        font-size: 45px;
+        margin: 0px 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    nav li a {
+        max-width: 90px;
+    }
+    nav button {
+        margin-top: 10px;
+    }   
+}
+
+@media screen and (min-width: 767px) {
+    nav .btn {
+        font-size: 15px;
+    }
+    #home .content-title {
+        max-width: 385px;
+    }
+    #home h2 {
+        font-size: 25px;
+    }    
+}
+
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+    #services {
+        padding: 60px;
+    } 
+}
+
+@media screen and (min-width: 1025px) {
+    #home, #services, #testimonials, #pricing, #faq, #contact {
+        height: 100vh;
+    }
+    #home .container {
+        margin-top: 40px;
+    }
+    #testimonials h2, #pricing h2, #faq h2, #contact h2 {
+        margin-top: 8vh;
+    }
+    #services .container {
+        padding-top: 30vh;
+    } 
+    #testimonials h3 {
+        font-size: 34px;
+        max-width: 630px;
+        margin: 34px auto;
+        line-height: 45px
+    }   
+    #contact h2 {
+        margin-bottom: 50px;
+    }
+    #contact h3 {
+        margin: 7rem auto 16px;
+    }
+}

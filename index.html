@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happymind</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href=""><i class="bi bi-flower1"></i> Happymind</a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonials">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#faq">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                </ul>
+                <button type="submit" class="btn btn-blue">Start your path</button>
+            </div>           
+    </nav>
+
+    <section id="home">
+        <div class="container">
+            <div class="content-title">
+                <h1>Grow your <span>happiness</span>!</h1>
+                <h2>If you don't know how to do it, we will guide you.</h2>
+            </div>
+            
+            <form action="" class="form-inline">
+                <input type="text" class="form-control" placeholder="Email" aria-label="email" aria-describedby="button-addon2">           
+                <button class="btn btn-outline-secondary btn-blue" type="submit" id="button-addon2">Start your path now!</button>  
+            </form> 
+        </div>
+
+                
+    </section>
+
+    <section id="services">
+        <div class="container">
+
+            <div class="card-deck">
+                <div class="card center-text">
+                    <div class="card-body">
+                        <h5><i class="bi bi-patch-check"></i></h5>
+                        <h4 class="card-title">Motivation</h4>                 
+                        <p class="card-text">Advice from professionals every day.</p>
+                        <p class="card-text">Get the right boost to face the day.</p> 
+                        <p class="card-text">Face life by looking at things from another perspective.</p>              
+                    </div> 
+                </div>
+
+                <div class="card">
+                    <div class="card-body center-text">
+                        <h5><i class="bi bi-flower2"></i></h5>
+                        <h4 class="card-title">Meditation</h4>                
+                        <p class="card-text">Personalized guided meditation sessions.</p>  
+                        <p class="card-text">Learn the art of breathing and start being in control of your emotions.</p>             
+                    </div> 
+                </div>
+
+                <div class="card">
+                    <div class="card-body center-text">
+                        <h5><i class="bi bi-graph-up"></i></h5>
+                        <h4 class="card-title">Tracking</h4>                
+                        <p class="card-text">Track your progress and health.</p>
+                        <p class="card-text">Create your habits and track your progress.</p>  
+                        <p class="card-text">Find your balance to live happily.</p>             
+                    </div> 
+                </div>
+
+            </div>
+
+        </div>      
+    </section>
+    
+    <section id="testimonials">
+        <div class="container">
+
+            <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active center-text">
+                        <h2>“An extremely motivating path of personal growth. 
+                            I changed the way I see the world around me, I reached a new awareness.”</h2>
+                        <img class="testimonial-image" src="/images/testimonial01.jpg" alt="">
+                        <p>Laura - Italy</p>
+                    </div>
+    
+                    <div class="carousel-item center-text">
+                        <h2 class="testimonial-text">“Happymind has revolutionized my existence. 
+                            Now I can appreciate every moment and be happy with what I have.”</h2>
+                        <img class="testimonial-image" src="images/testimonial02.jpg" alt="">
+                        <p>John - England</p>
+                    </div> 
+
+                    <div class="carousel-item center-text">
+                        <h2 class="testimonial-text">“The meditation sessions are extraordinary! 
+                            Personalized and sensitive to the needs of each individual person.”</h2>
+                        <img class="testimonial-image" src="images/testimonial03.jpg" alt="">
+                        <p>Claire - France</p>
+                    </div> 
+
+                    <div class="carousel-item center-text">
+                        <h2 class="testimonial-text">“A path of personal growth that I recommend 
+                            to anyone who wants to change their existence. I highly recommend it!”</h2>
+                        <img class="testimonial-image" src="images/testimonial04.jpg" alt="">
+                        <p>Miguel - Spain</p>
+                    </div> 
+                </div>
+                <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <div class="center-text">
+                <h3>Become part of the community. Compare yourself, share thoughts, make your happiness grow.</h3>
+                <button class="btn" type="submit">Start your path now!</button>  
+            </div>
+      
+        </div>             
+    </section>
+
+    <section id="pricing">
+
+        <div class="container">
+            <h2 class="center-text">A revolutionary training path, a journey in search of yourself</h2>
+
+            <div class="card-deck">
+                <div class="card center-text">
+                    <div class="card-header">
+                        <h4>Seed</h4>
+                    </div>
+                    <div class="card-body card-height">
+                        <h3 class="margin-bottom-card">Free</h3>
+                        <p>Daily tips</p>
+                        <p>20 meditations</p>
+                        <p>Habit diary</p>
+                        <a href="#" class="btn btn-lg btn-block btn-blue button-pricing-pos button-media-pos">Sign Up</a>
+                    </div>
+                </div>
+
+                <div class="card center-text">
+                    <div class="card-header">
+                        <h4>Bud</h4>
+                    </div>
+                    <div class="card-body card-height">
+                        <h3 class="margin-bottom-card">$29 / mo</h3>
+                        <p>Seed package</p>
+                        <p>∞ meditations</p>
+                        <p>Talk with tutors</p>
+                        <a href="#" class="btn btn-lg btn-block btn-salmon button-pricing-pos button-media-pos">Sign Up</a>
+                    </div>
+                </div>
+
+                <div class="card center-text">
+                    <div class="card-header">
+                        <h4>Oak</h4>
+                    </div>
+                    <div class="card-body card-height">
+                        <h3 class="margin-bottom-card">$49 / mo</h3>
+                        <p>Bud package</p>
+                        <p>Conferences</p>
+                        <p>Happy book</p>
+                        <a href="#" class="btn btn-lg btn-block btn-salmon button-pricing-pos button-media-pos">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>             
+    </section>
+
+    <section id="faq">
+        <div class="container">
+            <h2 class="center-text">FAQ</h2>
+
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="d-flex justify-content-between">
+                            <h4>Annual subscription</h4>
+                            <i class="bi bi-arrow-right"></i>
+                        </div>                       
+                    </div>
+                </div> 
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="d-flex justify-content-between">
+                            <h4>Daily activity update</h4>
+                            <i class="bi bi-arrow-right"></i>
+                        </div>                       
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="d-flex justify-content-between">
+                            <h4>New meditations</h4>
+                            <i class="bi bi-arrow-right"></i>
+                        </div>                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-header layout-faq">
+                        <div class="d-flex justify-content-between">
+                            <h4>How to pay for the subscription</h4>
+                            <i class="bi bi-arrow-right"></i>
+                        </div>                       
+                    </div>
+                </div> 
+
+                <div class="card">
+                    <div class="card-header layout-faq">
+                        <div class="d-flex justify-content-between">
+                            <h4>Happymind presale book</h4>
+                            <i class="bi bi-arrow-right"></i>
+                        </div>                       
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header layout-faq">
+                        <div class="d-flex justify-content-between">
+                            <h4>How to contact the tutor</h4>
+                            <i class="bi bi-arrow-right"></i>
+                        </div>                       
+                    </div>
+                </div>
+            </div>
+
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="How can we help you?" aria-label="How can we hep you">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+        </div>          
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="center-text d-flex flex-column align-items-center">
+                <h2>Where you can contact us</h2>
+                <div>
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-twitter"></i>                   
+                </div>
+            </div>
+            
+            <div class="center-text">
+                <h3>What are you still waiting for?</h2>
+                    <h4>Become part of Happymind and take care of your happiness!</h3>
+        
+                    <form action="" class="form-inline">
+                        <input type="text" class="form-control" placeholder="Email" aria-label="email" aria-describedby="button-addon2">           
+                        <button class="btn btn-outline-secondary btn-salmon" type="submit" id="button-addon2">Start your path now!</button>  
+                    </form> 
+            </div>
+            
+        </div>       
+    </section>
+    
+    <!-- Footer -->  
+    <footer id="footer" class="center-text">
+        <p>Landing Page Project 2021</p>
+        <p>Happymind</p>   
+    </footer>   
+    
+</body>
+</html>
